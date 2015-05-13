@@ -1,16 +1,17 @@
-html {width: 100%; height: 100%; font-family: 'Roboto', sans-serif;}
+html {width: 100%; height: 100%; min-height: 600px; font-family: 'Roboto', sans-serif;}
 body {position: relative; width: 100%; height: 100%; margin: 0; background-color: #000; background-image: url(../images/back.jpg); background-repeat:no-repeat; -webkit-background-size: cover; 
 	-moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 
-.cover {position: absolute; width: 100%; height: 100%; background-color: #000; opacity: 0.80;}
-.box {position: absolute; width: 600px; height: 300px; right: 50%; top: 50%; margin-right: -300px; margin-top: -200px;}
-.box > div:nth-child(1) {position: absolute; height: 100%; width: 242px;}
+.cover {position: absolute; width: 100%; height: 100%; background-color: #000; opacity: 0.85;}
+.box {position: absolute; width: 650px; height: 300px; right: 50%; top: 50%; margin-right: -325px; margin-top: -200px;}
+.box > div:nth-child(1) {position: absolute; height: 100%; width: 300px;}
 .box > div:nth-child(2) {position: relative; float: right; height: 100%; width: 200px;}
 .imox {color: #FFF;}
 .imox > div:nth-child(1) {text-align: center;}
-.imox h1 {display: inline-block; margin: 0 auto; font-size: 90px; font-weight: 900; line-height: 82px;}
-.imox h4 {display: inline-block; border-top: 5px solid #E7413D; padding: 4px 0 0;   margin: -5px 0 0 5px; font-size: 16px; width: 224px; overflow: hidden;}
-.imox p {font-size: 15px; margin: 30px 0 0; line-height: 20px; font-weight: 200; padding: 0 10px;}
+.imox img {display: inline-block;   height: 80px; margin: 0 4px 0 0;}
+.imox h1 {display: inline-block; margin: 0 auto; font-size: 90px; font-weight: 700; line-height: 82px; font-family: 'Oswald', sans-serif;}
+.imox h4 {display: inline-block; border-top: 5px solid #E7413D; padding: 4px 0 0;   margin: 2px 0 0 0; font-size: 18px; width: 278px; overflow: hidden; letter-spacing: 1px;}
+.imox p {font-size: 15px; margin: 30px 0 0; line-height: 20px; font-weight: 200; padding: 0 12px;}
 .soon {color: #FFF; font-size: 18px; letter-spacing: 2px; text-align: right;}
 .soon div {position: absolute; top: 50%; margin-top: -10px;}
 
