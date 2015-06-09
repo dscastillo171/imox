@@ -145,26 +145,29 @@ domready(function(){
 	promises.push(loadTemplate('templates/services.html'));
 	promises.push(loadTemplate('templates/contact.html'));
 	Promise.all(promises).then(function(templates){
+		// Set the main body.
 		$('body').html(templates[0]);
+
+		// Make the header thiner on scroll.
+		var header = $('#header');
+		window.onscroll = function(obj1, obj2){
+			var pageOffset = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0) || 0;
+			if(pageOffset > 40 && !header.hasClass('thin')){
+				header.addClass('thin');
+			} else if(pageOffset <= 40 && header.hasClass('thin')){
+				header.removeClass('thin');
+			}
+		};
+
+		// Dismiss the modal dialog.
+		$('#alert').on('click', function(){
+			var el = $('#alert');
+			if(el.hasClass('visible')){
+				el.removeClass('visible');
+			}
+		});
+
+		// Config the routing.
 		setRoutes(templates);
-	});
-
-	// Make the header thiner on scroll.
-	var header = $('#header');
-	window.onscroll = function(obj1, obj2){
-		var pageOffset = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0) || 0;
-		if(pageOffset > 40 && !header.hasClass('thin')){
-			header.addClass('thin');
-		} else if(pageOffset <= 40 && header.hasClass('thin')){
-			header.removeClass('thin');
-		}
-	};
-
-	// Dismiss the modal dialog.
-	$('#alert').on('click', function(){
-		var el = $('#alert');
-		if(el.hasClass('visible')){
-			el.removeClass('visible');
-		}
 	});
 });

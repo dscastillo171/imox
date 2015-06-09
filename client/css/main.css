@@ -7,14 +7,14 @@ html, body, #content {position: relative; width: 100%; min-width: 1000px; margin
 #header.thin {height: 80px;}
 #header .content {position: relative;   margin: 0 auto; width: 1000px; height: 100%; min-width: 1000px;}
 #header .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.80;}
-#header .imoxLogo {display: block; position: relative; text-align: center; width: 193px; height: 80px; top: 20px; cursor: pointer;}
-#header.thin .imoxLogo {height: 60px; width: 133px; top: 10px;}
-#header .imoxLogo img {display: inline-block; height: 54px; margin: 0 3px 0 0;}
-#header.thin .imoxLogo img {height: 34px;}
-#header .imoxLogo h1 {display: inline-block; margin: 0 auto; font-size: 60px; font-weight: 700; line-height: 54px; letter-spacing: 1px; font-family: 'Oswald', sans-serif; color: #FFF;}
-#header.thin .imoxLogo h1 {font-size: 38px; line-height: 34px;}
-#header .imoxLogo h4 {display: inline-block; border-top: 5px solid #E7413D; padding: 4px 0 0; margin: 2px 0 0 0; font-size: 12px; width: 192px; overflow: hidden; font-family: 'Roboto', sans-serif; letter-spacing: 1px; color: #FFF;}
-#header.thin .imoxLogo h4 {width: 126px; letter-spacing: 0; font-size: 9px;}
+#header .imoxLogo {display: block; position: relative; text-align: center; width: 195px; height: 80px; top: 20px; cursor: pointer; text-decoration: none !important;}
+#header.thin .imoxLogo {height: 60px; width: 134px; top: 10px;}
+#header .imoxLogo img {display: inline-block; height: 55px; margin: 0 3px 0 0;}
+#header.thin .imoxLogo img {height: 36px;}
+#header .imoxLogo h1 {display: inline-block; margin: 0 auto; font-size: 61px; font-weight: 700; line-height: 54px; letter-spacing: 1px; font-family: 'Oswald', sans-serif; color: #FFF;}
+#header.thin .imoxLogo h1 {font-size: 40px; line-height: 34px;}
+#header .imoxLogo h4 {display: inline-block; border-top: 5px solid #E7413D; padding: 4px 0 0; margin: 2px 0 0 0; font-size: 12px; width: 195px; white-space: nowrap; overflow: hidden; letter-spacing: 1px; color: #FFF;}
+#header.thin .imoxLogo h4 {width: 130px; letter-spacing: 0; font-size: 9px;}
 #header .menu {position: absolute; top: 0; right: 0; height: 120px;}
 #header .menu a {display: inline-block; cursor: pointer; font-size: 18px; font-weight: 400; letter-spacing: 1px; line-height: 26px; margin: 47px 0 47px 30px; color: #FFF; text-decoration: none;}
 #header.thin .menu a {margin: 27px 0 27px 30px;}
