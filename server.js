@@ -6,7 +6,8 @@ var config = require('./config.js')
 var app = express();
 
 // Basic express setup.
-app.use(express.static('client/'));
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static(__dirname + '/client'));
 
 // Mail server.
 var mailServer  = mail.server.connect({
@@ -34,5 +35,6 @@ app.post('/mail', function(req, res){
 });
 
 // Startup server.
-app.listen(8080);
-console.log("App listening on port 8080");
+app.listen(app.get('port'), function(){
+	console.log("App listening on port", app.get('port'));
+});
