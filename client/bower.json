@@ -1,0 +1,13 @@
+{
+	"name": "IMOX",
+	"version": "1.0.0",
+	"dependencies": {
+		"font-awesome": "latest",
+		"es6-promise": "2.2.0",
+		"fetch": "0.9.0",
+		"domready": "latest",
+		"Grapnel.js": "0.5.8",
+		"domtastic": "0.10.2",
+		"picomodal": "2.1.0"
+	}
+}

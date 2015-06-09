@@ -1,0 +1,11 @@
+{
+  "name": "IMOX",
+  "version": "0.0.1",
+  "description": "Twnel Companies Client Testing Tool",
+  "main": "server.js",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "emailjs": "latest"
+  }
+}
