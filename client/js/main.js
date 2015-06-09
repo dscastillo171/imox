@@ -14,12 +14,9 @@ domready(function(){
 	};
 
 	// Set a template.
-	var setTemplate = (function(){
-		var container = $('#content');
-		return function(template){
-			container.html(template);
-		};
-	})();
+	var setTemplate = function(template){
+		$('#content').html(template);
+	};
 
 	/** Core **/
 	// Define the routes.
@@ -48,12 +45,12 @@ domready(function(){
 
 		// Define the router.
 		var router = new Grapnel();
-		router.get('company', route(templates[1], 0));
-		router.get('services', route(templates[2], 1));
-		router.get('services/engines', route(templates[2], 1));
-		router.get('services/field', route(templates[2], 1, '#services .field'));
-		router.get('services/parts', route(templates[2], 1, '#services .parts'));
-		router.get('contact', route(templates[3], 2, null, function(){
+		router.get('company', route(templates[2], 0));
+		router.get('services', route(templates[3], 1));
+		router.get('services/engines', route(templates[3], 1));
+		router.get('services/field', route(templates[3], 1, '#services .field'));
+		router.get('services/parts', route(templates[3], 1, '#services .parts'));
+		router.get('contact', route(templates[4], 2, null, function(){
 			// Send button.
 			$('#contact .form .button').on('click', function(){
 				if(!$('#contact .form .button').hasClass('loading')){
@@ -123,7 +120,7 @@ domready(function(){
 				}
 			});
 		}));
-		router.get('*', route(templates[0], -1, null, function(){
+		router.get('*', route(templates[1], -1, null, function(){
 			// Clients carousel.
 			$('#home .clients .next').on('click', function(){
 				var el = $('#home .clients');
@@ -142,11 +139,15 @@ domready(function(){
 
 	// Start by loading the templates.
 	var promises = [];
+	promises.push(loadTemplate('templates/body.html'));
 	promises.push(loadTemplate('templates/home.html'));
 	promises.push(loadTemplate('templates/company.html'));
 	promises.push(loadTemplate('templates/services.html'));
 	promises.push(loadTemplate('templates/contact.html'));
-	Promise.all(promises).then(setRoutes);
+	Promise.all(promises).then(function(templates){
+		$('body').html(templates[0]);
+		setRoutes(templates);
+	});
 
 	// Make the header thiner on scroll.
 	var header = $('#header');

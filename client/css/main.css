@@ -22,7 +22,7 @@ html, body, #content {position: relative; width: 100%; min-width: 1000px; margin
 #header .menu a.selected {color: #55A5E4; border-color: #55A5E4;}
 
 #home {width: 100%; background-color: #FFF; overflow: hidden;}
-#home .title {position: relative; width: 100%; height: 560px; background-color: #000; color: #FFF; text-align: center; overflow: hidden; 
+#home .title {position: relative; width: 100%; height: 560px; background-color: #000; color: #FFF; text-align: center; overflow: hidden; background-color: #000;
 	background-image: url(../images/back.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 #home .title .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.25;}
 #home .title .text {position: relative; width: 940px; margin: 0 auto; z-index: 5; height: 100%; padding: 240px 0 0;}
@@ -76,7 +76,7 @@ html, body, #content {position: relative; width: 100%; min-width: 1000px; margin
 #home .story .numbers > div p span {display: block; font-size: 60px; font-weight: 300; color: #000; margin: 10px 0 0;}
 
 #company {width: 100%; background-color: #FFF; overflow: hidden;}
-#company .title {position: relative; width: 100%; height: 450px; background-color: #000; color: #FFF; text-align: center; overflow: hidden; background-position-y: 24%;
+#company .title {position: relative; width: 100%; height: 450px; background-color: #000; color: #FFF; text-align: center; overflow: hidden; background-position-y: 24%; background-color: #000;
 	background-image: url(../images/company.jpeg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 #company .title .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.25;}
 #company .title .text {position: relative; z-index: 5; height: 100%; text-align: center; padding: 220px 0 0;}
@@ -103,7 +103,7 @@ html, body, #content {position: relative; width: 100%; min-width: 1000px; margin
 #company .pilars > div > div p {color: #525252; text-align: justify; padding: 0 10px; padding: 20px 20px 0; font-weight: 300; font-size: 17px;}
 
 #services .engines {background-color: #FFF;}
-#services .engines > div:nth-child(1) {background-position-y: 50%; background-image: url(../images/services.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#services .engines > div:nth-child(1) {background-position-y: 50%; background-color: #000; background-image: url(../images/services.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 #services .engines .intro {padding: 150px 0 30px; width: 1000px; margin: 0 auto;}
 #services .engines .intro > div:nth-child(1) {position: relative; float: left; display: inline-block; width: 70%; overflow: hidden;}
 #services .engines .intro > div:nth-child(1) > p:nth-child(1) {margin: 20px 0; font-weight: 800; font-size: 50px; color: #FFF; letter-spacing: 1px;}
@@ -118,7 +118,7 @@ html, body, #content {position: relative; width: 100%; min-width: 1000px; margin
 #services .steps > div:nth-child(3) {padding: 0 0 0 3%;}
 #services .steps > div > span {display: block; margin: 25px 0; font-size: 16px; line-height: 1.3em; color: #626262; text-align: justify; font-weight: 300;}
 #services .steps > div > span > span {color: #525252; font-size: 21px; font-weight: 400;}
-#services .field {background-position-y: 30%; background-image: url(../images/drilling.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#services .field {background-position-y: 30%; background-color: #000; background-image: url(../images/drilling.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
 #services .field > div {width: 1000px; margin: 0 auto; padding: 0 0 30px;}
 #services .field > div h4 {font-size: 40px; font-weight: 600; letter-spacing: 1px; padding: 60px 0 30px; color: #FFF; margin: 0;}
 #services .field > div > div:nth-child(2) {font-size: 26px; font-weight: 300; color: #FFF; margin: 0 0 30px;}
