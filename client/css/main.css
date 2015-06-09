@@ -1,0 +1,191 @@
+html, body, #content {position: relative; width: 100%; min-width: 1000px; margin: 0; font-family: 'Lato', sans-serif;}
+
+.group:after {content: ""; display: table; clear: both;}
+.animate {-webkit-transition: 0.25s ease-out all; transition: 0.25s ease-out all;}
+
+#header {position: fixed; width: 100%; height: 120px; top: 0; left: 0; z-index: 100; color: #FFF;}
+#header.thin {height: 80px;}
+#header .content {position: relative;   margin: 0 auto; width: 1000px; height: 100%; min-width: 1000px;}
+#header .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.80;}
+#header .imoxLogo {display: block; position: relative; text-align: center; width: 193px; height: 80px; top: 20px; cursor: pointer;}
+#header.thin .imoxLogo {height: 60px; width: 133px; top: 10px;}
+#header .imoxLogo img {display: inline-block; height: 54px; margin: 0 3px 0 0;}
+#header.thin .imoxLogo img {height: 34px;}
+#header .imoxLogo h1 {display: inline-block; margin: 0 auto; font-size: 60px; font-weight: 700; line-height: 54px; letter-spacing: 1px; font-family: 'Oswald', sans-serif; color: #FFF;}
+#header.thin .imoxLogo h1 {font-size: 38px; line-height: 34px;}
+#header .imoxLogo h4 {display: inline-block; border-top: 5px solid #E7413D; padding: 4px 0 0; margin: 2px 0 0 0; font-size: 12px; width: 192px; overflow: hidden; font-family: 'Roboto', sans-serif; letter-spacing: 1px; color: #FFF;}
+#header.thin .imoxLogo h4 {width: 126px; letter-spacing: 0; font-size: 9px;}
+#header .menu {position: absolute; top: 0; right: 0; height: 120px;}
+#header .menu a {display: inline-block; cursor: pointer; font-size: 18px; font-weight: 400; letter-spacing: 1px; line-height: 26px; margin: 47px 0 47px 30px; color: #FFF; text-decoration: none;}
+#header.thin .menu a {margin: 27px 0 27px 30px;}
+#header .menu a:hover {border-bottom: 2px solid #FFF;}
+#header .menu a.selected {color: #55A5E4; border-color: #55A5E4;}
+
+#home {width: 100%; background-color: #FFF; overflow: hidden;}
+#home .title {position: relative; width: 100%; height: 560px; background-color: #000; color: #FFF; text-align: center; overflow: hidden; 
+	background-image: url(../images/back.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#home .title .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.25;}
+#home .title .text {position: relative; width: 940px; margin: 0 auto; z-index: 5; height: 100%; padding: 240px 0 0;}
+#home .title .text h1 {font-size: 50px; font-weight: 800; letter-spacing: 1px;}
+#home .title .text h4 {font-size: 22px; font-weight: 200; letter-spacing: 1px; color: #FFF;}
+#home .title .text .separator {height: 2px; width: 120px; background-color: #E7413D; margin: 0 auto;}
+#home .services {width: 1000px; margin: 0 auto;}
+#home .services .intro {font-size: 36px; color:#525252; text-align: center; line-height: 1.2em; margin: 90px 25px 70px;}
+#home .services .separator {height: 1px; width: 200px; background-color: #E2E2E2; margin: 0 auto;}
+#home .services .container {position: relative; width: 100%; margin: 60px 0;}
+#home .services .container > div {position: relative; text-align: center;}
+#home .services .container > div:nth-child(1) {position: absolute; top: 0; left: 0; width: 30%;}
+#home .services .container > div:nth-child(2) {margin: 0 auto; width: 30%;}
+#home .services .container > div:nth-child(3) {position: absolute; top: 0; right: 0; width: 30%;}
+#home .services .container > div > span {display: inline-block; width: 160px; height: 160px; border: 1px solid #E2E2E2; color: #525252; background-color: #FFF; border-radius: 80px; overflow: hidden;}
+#home .services .container > div > span img {height: 160px;}
+#home .services .container > div > p {font-size: 22px; font-weight: 300; margin: 22px 0 10px 0;}
+#home .services .container > div > a {color: #55A5E4; cursor: pointer; text-decoration: none;} #home .services .container > div > a:hover {border-bottom: 2px solid #55A5E4;}
+#home .clients {width: 100%; padding: 0 0 40px;}
+#home .clients h4 {font-size: 24px; color: #525252; margin: 60px 0 0;}
+#home .clients > div {width: 1000px; margin: 0 auto; overflow: hidden;}
+#home .clients > div .list {position: relative; width: 1500px; height: 180px; left: 0px;}
+#home .clients.right > div .list {left: -376px;}
+#home .clients > div .list a {position: relative; display: inline-block; margin: 30px 30px 60px 0; padding: 20px; border: thin solid #FFF; border-radius: 5px;} 
+#home .clients > div .list a:hover {border-color: #E2E2E2;}
+#home .clients > div .list a img {height: 100px;}
+#home .clients > div .list .next {display: block; cursor: pointer; position: absolute; left: 938px; z-index: 5; top: 50%; opacity: 0.0; margin-top: -20px; width: 58px; font-size: 40px; line-height: 40px; padding: 8px 0 10px 2px; background-color: #F9F9F9; text-align: center; border: thin solid #E2E2E2; border-radius: 30px;}
+#home .clients.right > div .list .next {display: none;}
+#home .clients > div .list .next:hover {background-color: #F2F2F2;}
+#home .clients > div .list:hover .next {opacity: 0.90;}
+#home .clients > div .list .preview {display: none; cursor: pointer; position: absolute; left: 376px; z-index: 5; top: 50%; opacity: 0.0; margin-top: -20px; width: 60px; font-size: 40px; line-height: 40px; padding: 8px 0 10px 0; background-color: #F9F9F9; text-align: center; border: thin solid #E2E2E2; border-radius: 30px;}
+#home .clients.right > div .list .preview {display: block;}
+#home .clients > div .list .preview:hover {background-color: #F2F2F2;}
+#home .clients > div .list:hover .preview {opacity: 0.90;}
+#home .story {width: 100%; background-color: #F9F9F9; padding: 0 0 30px 0;}
+#home .story > div {width: 1000px; margin: 0 auto;}
+#home .story h4 {font-size: 24px; color: #525252; margin: 60px 0 30px;}
+#home .story .case > div {position: relative; width: 48%;}
+#home .story .case > div:nth-child(1) {float: left;}
+#home .story .case > div:nth-child(2) {float: right;}
+#home .story .case p {text-align: justify; font-size: 18px; font-weight: 300; line-height: 1.3em; color: #555;}
+#home .story .case .image {text-align: center; padding: 40px 0 0;}
+#home .story .case .image span {display: inline-block; border: 1px solid #E2E2E2; height: 280px; width: 280px; border-radius: 140px; overflow: hidden;}
+#home .story .case .image img {height: 280px;}
+#home .story .numbers {position: relative; border: 2px solid #E2E2E2; border-radius: 5px; margin: 30px 0 80px;}
+#home .story .numbers > div {width: 32%; text-align: center; padding: 0px 0px}
+#home .story .numbers > div:nth-child(1) {position: absolute; top: 0; left: 0;}
+#home .story .numbers > div:nth-child(2) {position: relative; margin: 0 auto; border-right: 2px solid #E2E2E2; border-left: 2px solid #E2E2E2;}
+#home .story .numbers > div:nth-child(3) {position: absolute; top: 0; right: 0;}
+#home .story .numbers > div p {margin: 0; padding: 25px 25px; color: #555; font-weight: 300; font-size: 16px;}
+#home .story .numbers > div p span {display: block; font-size: 60px; font-weight: 300; color: #000; margin: 10px 0 0;}
+
+#company {width: 100%; background-color: #FFF; overflow: hidden;}
+#company .title {position: relative; width: 100%; height: 450px; background-color: #000; color: #FFF; text-align: center; overflow: hidden; background-position-y: 24%;
+	background-image: url(../images/company.jpeg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#company .title .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0.25;}
+#company .title .text {position: relative; z-index: 5; height: 100%; text-align: center; padding: 220px 0 0;}
+#company .title .text h1 {font-size: 50px; font-weight: 800; letter-spacing: 1px;}
+#company .intro {width: 1000px; margin: 0 auto; margin: 0 auto 80px;}
+#company .intro > p {text-align: justify; font-size: 26px; color: #525252; font-weight: 300; line-height: 1.3em; margin: 80px 0 60px;}
+#company .intro .separator {height: 1px; width: 200px; background-color: #E2E2E2; margin: 0 auto;}
+#company .intro .iso {position: relative;}
+#company .intro .iso > p {width: 50%; line-height: 1.3em; color: #525252; text-align: justify; font-weight: 300; font-size: 22px; padding: 40px 0 0;}
+#company .intro .iso > img {position: absolute; right: 0; top: 0; height: 200px;}
+#company .stuff {width: 100%; text-align: justify; color: #525252;  background-color: #F9F9F9; padding: 40px 0 60px;}
+#company .stuff > div {position: relative; width: 1000px; margin: 0 auto;}
+#company .stuff > div > div {width: 48%; overflow: hidden;}
+#company .stuff > div > div:nth-child(2) {position: absolute; top: 0; right: 0;}
+#company .stuff > div > div h4 {font-size: 24px; margin: 30px 0 30px;}
+#company .stuff > div > div p {line-height: 1.3em; font-size: 18px; font-weight: 300;}
+#company .pilars {width: 100%; overflow: hidden; padding: 60px 0;}
+#company .pilars h4 {font-size: 24px; color: #525252; margin: 30px 0 60px;}
+#company .pilars > div {width: 1000px; margin: 0 auto;}
+#company .pilars > div > div {width: 25%; overflow: hidden; float: left;} 
+#company .pilars > div > div span {position: relative; display: inline-block; width: 160px; border: 2px solid #E2E2E2; border-radius: 80px; background-color: #F9F9F9; font-size: 20px;
+	line-height: 20px; font-weight: 600; letter-spacing: 1px;   margin: 0 44px; padding: 70px 0; text-align: center; color: #777;}
+#company .pilars > div > div span i {position: absolute; right: 0; bottom: 0; font-size: 50px; color: #55A5E4;}
+#company .pilars > div > div p {color: #525252; text-align: justify; padding: 0 10px; padding: 20px 20px 0; font-weight: 300; font-size: 17px;}
+
+#services .engines {background-color: #FFF;}
+#services .engines > div:nth-child(1) {background-position-y: 50%; background-image: url(../images/services.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#services .engines .intro {padding: 150px 0 30px; width: 1000px; margin: 0 auto;}
+#services .engines .intro > div:nth-child(1) {position: relative; float: left; display: inline-block; width: 70%; overflow: hidden;}
+#services .engines .intro > div:nth-child(1) > p:nth-child(1) {margin: 20px 0; font-weight: 800; font-size: 50px; color: #FFF; letter-spacing: 1px;}
+#services .engines .intro > div:nth-child(1) > p:nth-child(2) {font-size: 18px;}
+#services .engines .intro > div:nth-child(2) {display: inline-block; width: 30%; overflow: hidden; font-weight: 300; font-size: 18px; text-align: justify;}
+#services .engines .intro > div:nth-child(2) > span {display: block; background-color: rgba(255, 255, 255, 0.9); color: #525252; border: thin solid #E2E2E2; border-radius: 5px; width: 208px; text-align: center; padding: 19px 15px; float: right;}
+#services .engines .intro > div:nth-child(2) > span > span {display: block; color: #000; font-size: 60px; margin: 5px 0;}
+#services .steps {width: 1000px; margin: 0 auto; padding: 0 0 40px;}
+#services .steps > h4 {color: #525252; font-size: 24px; margin: 80px 0 20px;}
+#services .steps > div {position: relative; float: left; width: 47%; overflow: hidden;}
+#services .steps > div:nth-child(2) {padding: 0 3% 0 0}
+#services .steps > div:nth-child(3) {padding: 0 0 0 3%;}
+#services .steps > div > span {display: block; margin: 25px 0; font-size: 16px; line-height: 1.3em; color: #626262; text-align: justify; font-weight: 300;}
+#services .steps > div > span > span {color: #525252; font-size: 21px; font-weight: 400;}
+#services .field {background-position-y: 30%; background-image: url(../images/drilling.jpg); background-repeat:no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+#services .field > div {width: 1000px; margin: 0 auto; padding: 0 0 30px;}
+#services .field > div h4 {font-size: 40px; font-weight: 600; letter-spacing: 1px; padding: 60px 0 30px; color: #FFF; margin: 0;}
+#services .field > div > div:nth-child(2) {font-size: 26px; font-weight: 300; color: #FFF; margin: 0 0 30px;}
+#services .field > div > div:nth-child(3) {border: thin solid #D2D2D2; border-radius: 5px; margin: 50px 0 40px; text-align: center; color: #000; font-weight: 300; font-size: 20px; background-color: rgba(255, 255, 255, 0.9);}
+#services .field > div > div:nth-child(3) > div {width: 25%; overflow: hidden; float: left;}
+#services .field > div > div:nth-child(3) > div > p {width: 90%; height: 100px; margin: 0;}
+#services .field > div > div:nth-child(3) > div > p.border {border: thin solid #D2D2D2; border-width: 0 0 0 thin;}
+#services .field > div > div:nth-child(3) > div:nth-child(1) > p {padding: 45px 5% 5px;}
+#services .field > div > div:nth-child(3) > div:nth-child(2) > p {padding: 34px 5% 16px;}
+#services .field > div > div:nth-child(3) > div:nth-child(3) > p {padding: 25px 5%;}
+#services .field > div > div:nth-child(3) > div:nth-child(4) > p {padding: 34px 5% 16px;}
+#services .parts {background-color: #FFF; color: #525252; text-align: justify; padding: 0 0 40px;}
+#services .parts > div {width: 1000px; margin: 0 auto;}
+#services .parts h4 {font-size: 24px; padding: 60px 0 30px; color: #525252; margin: 0;}
+#services .parts h5 {font-size: 20px; margin: 30px 0 10px;}
+#services .parts .sections > div {width: 48%; overflow: hidden; float: left; line-height: 1.3em; font-weight: 300; font-size: 17px;}
+#services .parts .sections > div:nth-child(1), #services .parts .sections > div:nth-child(3) {padding: 0 2% 0 0;}
+#services .parts .sections > div:nth-child(2), #services .parts .sections > div:nth-child(4) {padding: 0 0 0 2%;}
+#services .parts .sections > div:nth-child(4) div {text-align: left; line-height: 1.4em;}
+#services .parts .sections > div:nth-child(4) span {font-weight: 400; display: inline-block; margin: 0 15px 0 0;}
+#services .parts .sections strong {font-weight: 400;}
+#services .guarantee {background-color: #F9F9F9; padding: 0 0 10px;}
+#services .guarantee > div {width: 1000px; margin: 0 auto;}
+#services .guarantee h4 {font-size: 24px; padding: 60px 0 30px; color: #525252; margin: 0;}
+#services .guarantee > div > div:nth-child(2) {width: 60%; float: left; color: #525252; font-size: 20px; text-align: justify; line-height: 1.3em; margin: 0 0 60px; font-weight: 300;}
+#services .guarantee > div > div:nth-child(2) strong {font-weight: 400;}
+#services .guarantee > div > div:nth-child(3) {width: 40%; float: left;}
+#services .guarantee > div > div:nth-child(3) > span {display: inline-block; font-weight: 300; padding: 20px 10px; width: 280px; float: right; color: #525252; font-size: 18px; text-align: center; border: thin solid #E2E2E2; border-radius: 5px;}
+#services .guarantee > div > div:nth-child(3) > span > span {display: block; color: #000; font-size: 60px; margin: 5px 0;}
+
+#contact .intro {background-color: #F9F9F9; padding: 120px 0 0;}
+#contact .intro h4 {color: #525252; width: 1000px; margin: 0 auto; font-size: 50px; letter-spacing: 1px; font-weight: 800; padding: 40px 0;}
+#contact > div:nth-child(2) {width: 1000px; margin: 0 auto; padding: 40px 0 30px;}
+#contact > div:nth-child(2) > div:nth-child(1) {width: 70%; overflow: hidden; float: left;}
+#contact > div:nth-child(2) > div:nth-child(2) {width: 30%; overflow: hidden; float: left; color: #525252;}
+#contact .form p {font-size: 20px; color: #525252; margin: 30px 0 40px; font-weight: 600;}
+#contact .input {margin: 0 0 25px;}
+#contact .input.halve {width: 50%; display: inline-block; overflow: hidden; float: left;}
+#contact .input span {display: block; color: #525252;}
+#contact .input span:nth-child(3) {display: none; color: #E7413D;}
+#contact .input.error span:nth-child(3) {display: block;}
+#contact .input span span {display: inline; color: #E7413D;}
+#contact .input input {height: 34px; width: 85%; font-size: 16px; line-height: 34px; border: thin solid #E2E2E2; padding: 0 15px; margin: 10px 0 5px;}
+#contact .input input:focus {outline: none; border-color: #000;}
+#contact .input.halve input {width: 70%;}
+#contact .input textarea {height: 160px; width: 85%; font-size: 16px; line-height: 1.3em; border: thin solid #E2E2E2; padding: 10px 15px; margin: 10px 0 5px; resize: vertical;}
+#contact .input textarea:focus {outline: none; border-color: #000;}
+#contact .input.error input, #contact .input.error textarea {border-color: #E7413D;}
+#contact .button {cursor: pointer; display: inline-block; height: 36px; line-height: 36px; font-size: 18px; font-weight: 600; letter-spacing: 1px; background-color: #55A5E4; color: #FFF; padding: 0 25px;}
+#contact .button:hover {background-color: #4595E4;}
+#contact .button .fa {display: none;}
+#contact .button.loading .fa {display: inherit;}
+#contact > div:nth-child(2) > div:nth-child(2) h5 {font-size: 18px; margin: 30px 0 10px;}
+#contact > div:nth-child(2) > div:nth-child(2) span {display: block; font-size: 17px; margin: 5px 0; font-weight: 300;}
+
+#alert {display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.80); z-index: 1000;}
+#alert.visible {display: block;}
+#alert > div {position: relative; background-color: #FFF; border-radius: 5px; width: 300px; margin: -75px auto 0; top: 50%; padding: 20px 25px;}
+#alert > div > span:nth-child(1), #alert > div > span:nth-child(2) {display: block; font-weight: 300; font-size: 18px; color: #525252; text-align: justify; line-height: 1.3em;}
+#alert > div > span:nth-child(2), #alert.error > div > span:nth-child(1) {display: none;}
+#alert.error > div > span:nth-child(2) {display: block;}
+#alert > div > span:nth-child(3) {position: relative; left: 50%; margin: 15px 0 0 -38px; cursor: pointer; display: inline-block; height: 36px; width: 76px; line-height: 36px; font-size: 18px; font-weight: 600; letter-spacing: 1px; background-color: #55A5E4; color: #FFF; text-align: center;}
+#alert > div > span:nth-child(3):hover {background-color: #4595E4;}
+
+#footer {width: 100%; background-color: #434343; overflow: hidden;}
+#footer .contact {width: 1000px; margin: 60px auto;}
+#footer .contact > div {width: 33%; float: left; margin: 0 5% 0 0;}
+#footer .contact > div h4 {color: #777; font-weight: 300; font-size: 16px; margin: 20px 0;}
+#footer .contact > div span {display: block; margin: 10px 0; color: #BDBDBD; font-size: 16px; font-weight: 300;}
+#footer > p {text-align: center; color: #777; font-weight: 300; margin: 30px 0 60px 0;}
