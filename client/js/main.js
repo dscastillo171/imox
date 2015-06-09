@@ -123,7 +123,7 @@ domready(function(){
 				}
 			});
 		}));
-		router.get('*', route(templates[0], null, null, function(){
+		router.get('*', route(templates[0], -1, null, function(){
 			// Clients carousel.
 			$('#home .clients .next').on('click', function(){
 				var el = $('#home .clients');
