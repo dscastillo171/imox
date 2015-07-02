@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.post('/mail', function(req, res){
 	mailServer.send({
 		text: req.body.message + '\n\n' + (req.body.company? req.body.company: '') + '\n' + req.body.name + '\n' + req.body.mail, 
-		from: 'IMOX Web <mephysto66@gmail.com>', 
+		from: 'IMOX Web <imox.web@gmail.com>', 
 		to: "Support <santiagocastillo79@gmail.com>",
 		subject: "Nuevo contacto:  " + (req.body.message.length > 50? req.body.message.substr(0, 50) + '...': req.body.message)
 	}, function(error, message) {

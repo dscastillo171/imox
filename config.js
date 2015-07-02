@@ -1,5 +1,5 @@
 module.exports = {
-	user: 'mephysto66',
-	password: 'moRROcoi',
+	user: 'imox.web',
+	password: '',
 	smtp: 'smtp.gmail.com'
 };

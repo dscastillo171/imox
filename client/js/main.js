@@ -122,18 +122,39 @@ domready(function(){
 		}));
 		router.get('*', route(templates[1], -1, null, function(){
 			// Clients carousel.
-			$('#home .clients .next').on('click', function(){
+			var nextFlag = false;
+			var timeoutId = null;
+			var startTimeout = function(){
+				if(timeoutId){
+					clearTimeout(timeoutId);
+				}
+				timeoutId = setTimeout(function(){console.log('go');
+					if(nextFlag){
+						previous();
+					} else{
+						next();
+					}
+				}, 10000);
+			};
+			var next = function(){
 				var el = $('#home .clients');
 				if(!el.hasClass('right')){
+					nextFlag = true;
 					el.addClass('right');
+					startTimeout();
 				}
-			});
-			$('#home .clients .preview').on('click', function(){
+			};
+			$('#home .clients .next').on('click', next);
+			var previous = function(){
 				var el = $('#home .clients');
 				if(el.hasClass('right')){
+					nextFlag= false;
 					el.removeClass('right');
+					startTimeout();
 				}
-			});
+			};
+			$('#home .clients .preview').on('click', previous);
+			startTimeout();
 		}));
 	}
 
